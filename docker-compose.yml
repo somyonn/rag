@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  rag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag-system
+    volumes:
+      # chroma_db를 영구 저장
+      - ./chroma_db:/app/chroma_db
+      # 환경 변수 파일 (선택)
+      - ./.env:/app/.env:ro
+    environment:
+      # LLM 설정
+      - LLM_TYPE=${LLM_TYPE:-openai}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - HUGGINGFACE_API_TOKEN=${HUGGINGFACE_API_TOKEN:-}
+      - HUGGINGFACE_MODEL=${HUGGINGFACE_MODEL:-}
+      # 기타 설정
+      - PYTHONUNBUFFERED=1
+      - TOKENIZERS_PARALLELISM=false
+    restart: unless-stopped
+    # 포트 매핑 (HTTP API 서버)
+    ports:
+      - "8000:8000"
+    # API 서버 실행
+    command: python api_server.py
+

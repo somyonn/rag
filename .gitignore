@@ -1,0 +1,150 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# .env.example은 추적 (템플릿용)
+!.env.example
+
+# ==========================================
+# ChromaDB & Databases
+# ==========================================
+chroma_db/
+aws_chroma_db/
+docker_chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+
+# ==========================================
+# Docker Build Artifacts
+# ==========================================
+*.tar.gz
+rag-system.tar.gz
+rag-files.tar.gz
+chroma_db.tar.gz
+
+# ==========================================
+# IDE & Editor
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+*.log.*
+logs/
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ==========================================
+# Model Files & Weights (선택적)
+# ==========================================
+# *.pt
+# *.pth
+# *.onnx
+# models/
+# weights/
+
+# ==========================================
+# Jupyter Notebooks (있을 경우)
+# ==========================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ==========================================
+# Testing
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+.pytest_cache/
+
+# ==========================================
+# Python Type Checking
+# ==========================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# ==========================================
+# Documentation Build
+# ==========================================
+docs/_build/
+site/
