@@ -1,0 +1,17 @@
+langchain
+langchain_community
+beautifulsoup4
+readability-lxml
+pdfminer.six
+requests
+pymupdf
+unstructured
+pi_heif
+unstructured-inference
+pdf2image
+unstructured-pytesseract
+pytesseract
+langchain-text-splitters
+tiktoken
+sentence-transformers
+chromadb
